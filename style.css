@@ -1,0 +1,133 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset some default styles and set the font-family to Poppins */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Define styles for the body */
+body {
+    width: 100%;
+    background-color: #618db8;
+    color: white;
+}
+
+/* Header heading section styles */
+#heading {
+    margin-top: 100px;
+}
+
+/* Header navbar styles */
+#nav {
+    box-shadow: rgba(210, 5, 206, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* Styles for specific elements in the navbar, e.g., #eat */
+#eat {
+    color: #d48632;
+}
+
+/* Header search bar section styles */
+#search-bar {
+    max-width: 600px;
+}
+
+#search-bar input {
+    height: 50px;
+    border-radius: 20px;
+}
+
+/* Meal card styles */
+#card {
+    background-color: #5d412a;
+    padding: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#card img {
+    border-radius: 50%;
+}
+
+/* Meal details container styles */
+#meal-details {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #32709a;
+}
+
+#meal-header {
+    width: 70%;
+    margin: auto;
+}
+
+#meal-thumbail img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+#meal-instruction {
+    margin: auto;
+    text-align: center;
+}
+
+/* Heart button hover effect */
+.btn-outline-light:hover i.fa-heart {
+    color: red; /* Change the color to red when hovering */
+}
+
+/* Favourites offcanvas styles */
+#favourites-body {
+    background-color: #212529;
+}
+
+/* Dark/Light Mode button styling */
+button#color-toggle {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    padding: 10px 15px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+button#color-toggle:hover {
+    background-color: #d48632;
+}
+
+/* Define a keyframe animation to change the emoji */
+@keyframes changeEmoji {
+    0% {
+        content: "😋";
+    }
+    50% {
+        content: "🍔"; /* Change to the new emoji halfway through the animation */
+    }
+    100% {
+        content: "😋";
+    }
+}
+
+/* Apply the animation to the span element */
+#emoji {
+    animation: changeEmoji 1s infinite; /* Adjust the animation duration as needed */
+}
